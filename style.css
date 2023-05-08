@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
+nav button {
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    margin: 20px 10px 0px 10px;
+    background-color: #0a98fe20;
+    color: #0A99FE;
+    border: none;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+nav button:hover {
+    background-color: #0a98fe;
+    color: white;
+}
+
+.paintings-Section{
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto;
+}
+
+.paintings-Section h2{
+    font-size: 20px;
+    font-weight: 300px;
+}
+
+.paintings-Section ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 20px;
+} 
+
+.figures-Section{
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto;
+   
+}
+
+.figures-Section h2{
+    font-size: 20px;
+    font-weight: 300px;
+}
+
+.figures-Section ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    background-color: #edecec;
+    border-radius: 5px;
+    width: 207px;
+    height: 275px;   
+}
+
+.card img{
+    width: 207px;
+    height: 160px;
+    border-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding-bottom: 30px;
+}
+
+.card name{
+    padding-bottom: 15px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.card price{
+    font-size: 16px;
+    font-weight: 300;
+}
+
