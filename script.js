@@ -92,24 +92,24 @@ sectionPaintings.appendChild(ulPaintings);
 for(let i = 0; i < paintingsArray.length; i++){
   const paintings = paintingsArray[i];
 
-  let li = document.createElement('li');
-  ulPaintings.appendChild(li);
+  let listPaintings = document.createElement('li');
+  ulPaintings.appendChild(listPaintings);
 
-  const div = document.createElement('div');
-  div.className = 'card';
-  li.appendChild(div);
+  const cardPaintings = document.createElement('div');
+  cardPaintings.className = 'card';
+  listPaintings.appendChild(cardPaintings);
 
-  const img = document.createElement('img');
-  img.src = paintings.image;
-  div.appendChild(img);
+  const imagePaintings = document.createElement('img');
+  imagePaintings.src = paintings.image;
+  cardPaintings.appendChild(imagePaintings);
 
-  const name = document.createElement('name');
-  name.innerText = paintings.name;
-  div.appendChild(name);
+  const namePaintings = document.createElement('name');
+  namePaintings.innerHTML = paintings.name;
+  cardPaintings.appendChild(namePaintings);
 
-  const price = document.createElement('price');
-  price.innerText = paintings.price;
-  div.appendChild(price)
+  const pricePaintings = document.createElement('price');
+  pricePaintings.innerHTML = paintings.price;
+  cardPaintings.appendChild(pricePaintings);
   }
   
 }
@@ -123,24 +123,24 @@ sectionFigures.appendChild(ulFigures);
 for(let i = 0; i < figuresArray.length; i++){
   const figures = figuresArray[i];
   
-  let li = document.createElement('li');
-  ulFigures.appendChild(li);
+  let listFigures = document.createElement('li');
+  ulFigures.appendChild(listFigures);
   
-  const div = document.createElement('div');
-  div.className = 'card';
-  li.appendChild(div);
+  const cardFigures = document.createElement('div');
+  cardFigures.className = 'card';
+  listFigures.appendChild(cardFigures);
   
-  const img = document.createElement('img');
-  img.src = figures.image;
-  div.appendChild(img);
+  const imageFigures = document.createElement('img');
+  imageFigures.src = figures.image;
+  cardFigures.appendChild(imageFigures);
   
-  const name = document.createElement('name');
-  name.innerText = figures.name;
-  div.appendChild(name);
+  const nameFigures = document.createElement('name');
+  nameFigures.innerHTML = figures.name;
+  cardFigures.appendChild(nameFigures);
   
-  const price = document.createElement('price');
-  price.innerText = figures.price;
-  div.appendChild(price)
+  const priceFigures = document.createElement('price');
+  priceFigures.innerHTML = figures.price;
+  cardFigures.appendChild(priceFigures);
   }
     
 }
