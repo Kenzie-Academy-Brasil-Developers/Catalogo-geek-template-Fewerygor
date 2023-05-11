@@ -103,11 +103,11 @@ for(let i = 0; i < paintingsArray.length; i++){
   imagePaintings.src = paintings.image;
   cardPaintings.appendChild(imagePaintings);
 
-  const namePaintings = document.createElement('name');
+  const namePaintings = document.createElement('h4');
   namePaintings.innerHTML = paintings.name;
   cardPaintings.appendChild(namePaintings);
 
-  const pricePaintings = document.createElement('price');
+  const pricePaintings = document.createElement('p');
   pricePaintings.innerHTML = paintings.price;
   cardPaintings.appendChild(pricePaintings);
   }
@@ -134,11 +134,11 @@ for(let i = 0; i < figuresArray.length; i++){
   imageFigures.src = figures.image;
   cardFigures.appendChild(imageFigures);
   
-  const nameFigures = document.createElement('name');
+  const nameFigures = document.createElement('h4');
   nameFigures.innerHTML = figures.name;
   cardFigures.appendChild(nameFigures);
   
-  const priceFigures = document.createElement('price');
+  const priceFigures = document.createElement('p');
   priceFigures.innerHTML = figures.price;
   cardFigures.appendChild(priceFigures);
   }
